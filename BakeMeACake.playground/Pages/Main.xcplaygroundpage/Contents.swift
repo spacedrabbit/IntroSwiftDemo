@@ -71,6 +71,75 @@ apprenticeBaker = ""
 print()
 
 /*:
-  You may of noticed that we didn't add **`var`** just before the variable's name this time. This is because, as far as the computer is concerned, `apprenticeBaker` already exists, it can vary, and it is a **`String`** (more on this in a moment). That is why we can  **re-assign** it's **value** without having to add in the **`var`**. If you were to try adding in a **`var`** just before apprenticeBaker in this instance, it would "destroy" the old `apprenticeBaker` variable, and create a new one with the exact same name. In this example, nothing bad would happen. But you shouldn't go on "destroying" variables you've already created because they could introduce bugs in your code!"
+  You may of noticed that we didn't add **`var`** just before the variable's name this time. This is because, as far as the computer is concerned, `apprenticeBaker` already exists, it can vary, and it is a **`String`** (more on this in a moment). That is why we can  **re-assign** it's **value** without having to add in the **`var`**. If you were to try adding in a **`var`** just before apprenticeBaker in this instance, it would "destroy" the old `apprenticeBaker` variable, and create a new one with the exact same name. In this example, nothing bad would happen. But you shouldn't go on "destroying" variables you've already created because they could introduce bugs in your code!
  */
+var allOurIngredients = [milk, egg, rice, bread, herbs, honey, water]  // [🐄", "🐓", "🍚", "🍞", "🌿", "🍯", "💧"]
 
+var firstIngredient = milk // 🐄
+var secondIngredient = egg // 🐓
+
+print("The first ingredient is \(firstIngredient)")
+print("The second ingredient is \(secondIngredient)")
+
+firstIngredient = rice
+print("The first ingredient is \(firstIngredient)")
+print("The second ingredient is \(secondIngredient)")
+
+firstIngredient = secondIngredient
+secondIngredient = herbs
+print("The first ingredient is \(firstIngredient)")
+print("The second ingredient is \(secondIngredient)")
+
+let criticalIngredient = bread
+firstIngredient = criticalIngredient
+print("The first ingredient is \(firstIngredient)")
+
+// criticalIngredient = milk // error! 
+
+if criticalIngredient == bread {
+  print("We're making french toast!")
+}
+else {
+  print("We're making a cake!")
+}
+
+let numberOfEggsNeeded = 6
+let numberOfEggsWeHave = 0
+if numberOfEggsNeeded > numberOfEggsWeHave {
+  print("We don't have enough eggs to bake!")
+}
+
+if numberOfEggsWeHave == 0 {
+  print("We need to go shopping")
+}
+
+func doWeHaveEnoughEggs(numberOfEggs: Int) {
+  let doWeHaveEnough: Bool = numberOfEggs > numberOfEggsNeeded
+  
+  if doWeHaveEnough == true {
+    print("Let's start baking")
+  }
+  else {
+    print("We need to go shopping first")
+  }
+}
+
+doWeHaveEnoughEggs(numberOfEggsWeHave)
+var eggCarton = [egg, egg, egg, egg, egg, egg] // 6 eggs!
+for e in eggCarton {
+  print("\(e)")
+}
+
+var listOfInstructionsToMakeRice = [
+  "1. Boil Water",
+  "2. Add Rice to Boiling Water",
+  "3. Reduce heat to a simmer",
+  "4. Cook for 20 minutes"
+]
+
+func printInstructionsByStep(instructions: [String]) {
+  for step in instructions {
+    print("Next Up: \(step)")
+  }
+}
+printInstructionsByStep(listOfInstructionsToMakeRice)
