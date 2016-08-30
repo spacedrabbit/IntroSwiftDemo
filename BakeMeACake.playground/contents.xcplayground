@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw'>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
-        <page name='Main'/>
-        <page name='Interactive Demo'/>
+        <page name='1. Intro'/>
+        <page name='2. Variables'/>
+        <page name='2a. Variables Exercises'/>
+        <page name='3. If-Else'/>
+        <page name='3a. If-Else Exercise'/>
+        <page name='4. Functions'/>
+        <page name='Old'/>
     </pages>
 </playground>
