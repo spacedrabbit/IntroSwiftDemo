@@ -23,10 +23,46 @@ else {
  */
 
 // 1. Similar to the above example, check if the eggs are fresh. If they are, print out something to let us know. 
+if areTheEggsFresh() == true {
+  print("So fresh!")
+}
 
 // 2. Now, let's check if the eggs are Grade A. If they aren't, let's definitely make sure we know.
+if areTheEggsGradeA() == true {
+  print("eggs are grade a")
+}
+else {
+  print("eggs are not!")
+}
 
 // 3. Let's now check if the eggs are cracked. If they are, then crack them! Then, check to make sure they are actually cracked. (Bonus: assign the results to a variable and then make your check on the variable)
+
+if checkIfEggsAreCracked() == true {
+  print("eggs cracked")
+}
+else {
+  print("not cracked")
+  
+  crackEggs()
+  if checkIfEggsAreCracked() == true {
+    print("eggs cracked")
+  }
+}
+
+// Bonus:
+var eggStatus: Bool = checkIfEggsAreCracked()
+if eggStatus == true {
+  print("eggs cracked")
+} else {
+  crackEggs()
+}
+
+eggStatus = checkIfEggsAreCracked()
+if eggStatus == true {
+  print("eggs cracked")
+} else {
+  crackEggs()
+}
 
 //: ---
 //: [<    Previous: If-Else](3.%20If-Else)          -          [Next Up: Function   >](4.%20Functions)

@@ -58,8 +58,9 @@ import UIKit
 
 var smallMeasuringCup: String = "milk"
 
-
-
+//var smallGlassBowl: String = "sugar"
+//var mediumGlassBowl: String = "eggs"
+//var largeGlassBowl: String = "flour"
 
 
 //: ---
