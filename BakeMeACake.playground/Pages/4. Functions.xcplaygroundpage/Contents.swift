@@ -50,5 +50,6 @@ print("The eggs are cracked is a \(eggCheckAnswer) statement")
 
 
 //: ---
-//: [<    Previous: If-Else Exercises](4.%20If-Else Exercise)
+//: [<    Previous: If-Else Exercises](4.%20If-Else%20Exercise)
+
 //: [Return to Intro](1.%20Intro)
